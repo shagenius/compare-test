@@ -9,8 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('categories.store') }}">
-                        @csrf
-
+                        {{csrf_field()}}
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
@@ -29,7 +28,7 @@
                             <label for="active" class="col-md-4 col-form-label text-md-right">{{ __('Active') }}</label>
 
                             <div class="col-md-6">
-                                <input id="active" type="checkbox" class="form-control @error('active') is-invalid @enderror" name="active" value="{{ old('active') }}" required autocomplete="active" autofocus>
+                                <input id="active" type="checkbox" class="form-control @error('active') is-invalid @enderror" name="active" value="{{ old('active') }}" autocomplete="active" autofocus>
 
                                 @error('active')
                                     <span class="invalid-feedback" role="alert">
@@ -44,6 +43,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Save') }}
                                 </button>
+                                <a class="btn btn-dark" href="{{ route('categories.index') }}">Cancel</a>
                             </div>
                         </div>
                     </form>

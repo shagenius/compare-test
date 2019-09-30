@@ -12,7 +12,7 @@
                     <div id="flick-img">
                         <?php
                             foreach($images['photo'] as $photo) { 
-                                 echo '<img src="' . 'http://farm' . $photo["farm"] . '.static.flickr.com/' . $photo["server"] . '/' . $photo["id"] . '_' . $photo["secret"] . '.jpg">'; ;
+                                 echo '<img class="img-thumbnail" src="' . 'http://farm' . $photo["farm"] . '.static.flickr.com/' . $photo["server"] . '/' . $photo["id"] . '_' . $photo["secret"] . '.jpg" width="100" height="100">'; ;
                             }
                         ?>
                     </div>

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {    
+    
+    protected $fillable = ['name', 'active'];
+    
     /**
      * Get the validation rules that apply to the request.
      *
@@ -14,7 +17,7 @@ class Category extends Model
     public static function rules()
     {
         return [
-            'name' => 'required|unique:categories|max:255',
+            'name' => 'required|max:255',
         ];
     }
 }
