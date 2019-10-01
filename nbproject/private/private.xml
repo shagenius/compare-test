@@ -3,17 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/category/index.blade.php</file>
             <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/Category.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/welcome.blade.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/routes/api.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/database/migrations/2019_09_24_135913_create_categories_table.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/database/seeds/UsersTableSeeder.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/database/seeds/CategoriesTableSeeder.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/config/app.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/User.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/.env</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/.env.example</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/admin.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/user/index.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/gallery.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/Http/Controllers/Controller.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/category/show.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/layouts/admin-menu.blade.php</file>
             <file>file:/Users/shameemah/Sites/htdocs/compare-test/routes/web.php</file>
-            <file>file:/Users/shameemah/Sites/htdocs/compare-test/database/migrations/2014_10_12_000000_create_users_table.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/category/edit.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/Http/Controllers/HomeController.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/routes/api.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/category/create.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/Http/Controllers/CategoryController.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/layouts/menu.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/User.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/app/Http/Controllers/AdminController.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/resources/views/index.blade.php</file>
+            <file>file:/Users/shameemah/Sites/htdocs/compare-test/.env</file>
         </group>
     </open-files>
 </project-private>

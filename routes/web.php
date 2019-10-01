@@ -15,7 +15,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/gallery/{category}', 'HomeController@gallery')->name('gallery');
 
-Route::get('/photo/{id}', 'HomeController@photo')->name('photo');
+Route::get('/photo/{id}/{category}', 'HomeController@photo')->name('photo');
 
 Route::get('/categories', 'CategoryController@index')->name('categories.index');
 

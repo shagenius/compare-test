@@ -27,22 +27,23 @@ class HomeController extends Controller
         $flickr = new Flickr(new Api(env('FLICKR_KEY')));
 
         // https://www.flickr.com/services/api/flickr.photosets.getList.html
-        $results = $flickr->request('flickr.photos.search', array('text'=>urlencode($category), 'privacy_filter'=>1));
+        $results = $flickr->request('flickr.photos.search', array('text'=>urlencode($category), 'privacy_filter'=>1, 'per_page'=>50));
         
         $categories = Category::all();
-        return view('gallery', ['categories' => $categories, 'images'=>$results->photos]);
+        return view('gallery', ['categories' => $categories, 'images'=>$results->photos, 'category'=>$category]);
     }
     
-    public function photo($id)
+    public function photo($id, $category)
     {
         $categories = Category::all();
+        
+        $category =  $category;
         
         $flickr = new Flickr(new Api(env('FLICKR_KEY')));
 
         // https://www.flickr.com/services/api/flickr.photosets.getList.html
-        $results = $flickr->request('flickr.photos.getInfo', array('id'=>urlencode($id)));
+        $result = $flickr->photoInfo(urlencode($id));
         
-        print_r($results);exit;
-        return view('photo', ['categories' => $categories, 'images'=>$results->photos]);
+        return view('photo', ['categories' => $categories, 'photo'=>$result->photo, 'category'=>$category]);
     }
 }
